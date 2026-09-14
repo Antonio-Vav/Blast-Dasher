@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blast Dasher</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
             <nav>
                 <ul>
-                    <li><a href="#index.html">HOME</a></li>
+                    <li><a class="button" href="#index.html">HOME</a></li>
                     <li><a class="button" href="login.html">LOGIN</a></li>
                     <li><a class="button" href="register.html">REGISTER</a></li>
                 </ul>
@@ -21,13 +22,12 @@
 
             <section>
                 <h1>A Game About Dodging Attacks</h1>
-                <img src="./images/BlastDasherImage.jpg" alt="Hexagon Dodging lasers" width="800px">
-                <!-- <button><a href="login.html">LOGIN</a></button> -->
+                <img class="game-banner" src="./images/BlastDasherImage.jpg" alt="Hexagon Dodging lasers" width="800px">
             </section>
 
             <section>
                 <h2>Submit Your Score</h2>
-                <form action="#" method="POST">
+                <form class="index-form" action="#" method="POST">
                     <div>
                         <label for="score">High Score: </label>
                         <input type="number" id="score" name="score" placeholder="Enter score..." required>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(121, 205, 233) black;
+    scrollbar-gutter: stable;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: rgb(19, 18, 18); 
+    color: white;           
+    margin: 0;                 
+    padding: 0;                
+}
+
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: lightskyblue;
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;             
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none;     
+    background-color: black;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 2px solid lightskyblue; 
+}
+
+nav ul li a.button {
+    color: white;
+    text-decoration: none;     
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;       
+    transition: background-color 0.3s ease; 
+}
+
+nav ul li a.button:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.game-banner {
+    width: 100%;               
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.3); 
+}
+
+form {
+    background-color: black;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    margin: 40px auto;
+    border: 2px solid rgb(127, 209, 236);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+.index-form{
+    transform: translateX(-25px);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: rgb(132, 210, 236);
+}
