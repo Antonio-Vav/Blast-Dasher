@@ -18,3 +18,19 @@ Blast Dasher is a fast paced, browser based arcade game where players control a 
 
 ## Entity-Relationship Diagram (ERD)
 ![Blast Dasher ERD](./images/Blast-Dasher-ERD.png)
+
+This ERD shows the USER and Highscore entities, their attributes as well as how they are connected. It also shows that a user may have one highscore, while each highscore must belong to exactly one user.
+
+## Relations
+
+![Blast Dasher Relations](./images/relationsDiagramComplete.png)
+
+This relational diagram shows how the USER and Highscore entities are organized into tables. Each table has its own primary key, and the Highscore table uses UserID as a foreign key to connect back to the USER table.
+
+## Normalization
+
+Both relations satisfy 1NF, 2NF, and 3NF.
+
+- **1NF:** Each attribute stores a single value, and neither table contains repeating groups.
+- **2NF:** Both tables use a single primary key, so there are no partial dependencies.
+- **3NF:** All non key attributes depend on their table's key, and there are no transitive dependencies.
