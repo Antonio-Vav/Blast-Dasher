@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blast Dasher</title>
         <link rel="stylesheet" href="style.css">
+        <script src="highscore.js" defer></script>
     </head>
 
     <body>
@@ -27,7 +28,7 @@
 
             <section>
                 <h2>Submit Your Score</h2>
-                <form class="index-form" action="#" method="POST">
+                <form id="highscoreForm" class="index-form" action="#" method="POST">
                     <div>
                         <label for="score">High Score: </label>
                         <input type="number" id="score" name="score" placeholder="Enter score..." required>
